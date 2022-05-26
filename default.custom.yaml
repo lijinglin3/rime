@@ -1,0 +1,20 @@
+patch:
+  menu:
+    page_size: 9
+  schema_list:
+    - schema: pinyin_simp
+  switcher:
+    caption: 【设置菜单】
+    hotkeys:
+      - Control+space
+  recognizer:
+    patterns:
+      email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+      uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+      url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+  key_binder:
+    bindings:
+      - accept: Shift+space
+        toggle: noop
+        when: always
+
